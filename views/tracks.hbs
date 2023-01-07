@@ -1,0 +1,18 @@
+<section class="tracksPage">
+  <div class="headerTracks">
+    <div class="btnBackHome" title="Go Back">
+      <a href="/">&lt;</a>
+    </div>
+    <div class="headerText">
+      <p>Title</p>
+      <p>Listen</p></div>
+  </div>
+  <div class="tracks">
+    {{#each tracks}}
+      <div class="track">
+        <h2>{{this.name}}</h2>
+        <audio controls src="{{this.preview_url}}"></audio>
+      </div>
+    {{/each}}
+  </div>
+</section>

@@ -1,0 +1,206 @@
+body {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: auto;
+}
+
+.homePageContainer {
+  background-image: url("/images/spotify-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.homePageContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homePageContainer input {
+  justify-content: center;
+  border: 2px solid rgba(140, 138, 138, 0.935);
+  border-radius: 6px;
+  width: 400px;
+  height: 50px;
+  margin-top: 80px;
+  margin-left: 200px;
+  font-size: 18px;
+}
+
+.homePageContainer button {
+  background-color: rgb(242, 58, 58);
+  color: white;
+  border: none;
+  width: 250px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 275px;
+  font-size: 18px;
+}
+
+.homePageContainer button:hover {
+  background-color: #29323c;
+}
+
+/*artis search results Page*/
+
+.artistSearch {
+  margin-bottom: 30px;
+}
+.headerArtist {
+  background-color: #485563;
+  color: white;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btnBackHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: black;
+  margin-left: 20px;
+}
+
+.btnBackHome a {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 200;
+  color: white;
+}
+
+.btnBackHome a:hover {
+  color: white;
+  font-size: 36px;
+}
+
+.btnBackHome:hover {
+  background-color: rgb(242, 58, 58);
+}
+
+.artist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.artistImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.artistImg img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.imgFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  background-color: #485563;
+}
+
+.artist h2 {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.btnArtistSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 58, 58);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btnArtistSearch a {
+  text-decoration: none;
+  color: white;
+}
+
+.btnArtistSearch:hover {
+  background-color: grey;
+}
+
+/* album page 
+repite the above css code */
+
+/* Track Page */
+
+.headerTracks {
+  background-color: #485563;
+  color: white;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.headerText {
+  font-size: 30px;
+  font-weight: bold;
+  color: #b3b7bb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 200px;
+  width: 80%;
+  align-items: center;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.track {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #eaf0f7;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.tracksPage {
+  background-color: #b3b7bb;
+}

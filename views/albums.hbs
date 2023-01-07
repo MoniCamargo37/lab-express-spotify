@@ -1,0 +1,18 @@
+<section class="artistSearch">
+
+  <div class="headerArtist">
+    <div class="btnBackHome" title="Go Back">
+      <a href="/">&lt;</a></div>
+  </div>
+  <div class="artist">
+    {{#each albums}}
+      <div class="artistImg">
+        <img src="{{this.images.0.url}}" alt="{{this.name}}" />
+        <div class="imgFooter">
+          <h2>{{this.name}}</h2>
+          <div class="btnArtistSearch"><a href="/tracks/{{this.id}}">View tracks</a></div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>
